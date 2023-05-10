@@ -2,6 +2,7 @@ import Sidebar from "@/components/Sidebar";
 import "./globals.css";
 import { Quicksand } from "next/font/google";
 import Topbar from "@/components/Topbar";
+import Navbar from "@/components/Navbar";
 
 const quicksand = Quicksand({ subsets: ["vietnamese"] });
 
@@ -20,8 +21,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div id="content" className="bg-white/10 col-span-9 rounded-lg p-6"> */}
         <div className="w-full bg-white shadow-xl rounded-lg flex overflow-x-auto custom-scrollbar">
           <Sidebar />
-          <div className="flex-1 px-2">
-            <Topbar />
+          <div className="flex-4">
+            {/* <Topbar /> */}
+            <Navbar />
             {children}
           </div>
         </div>

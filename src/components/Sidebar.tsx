@@ -2,8 +2,24 @@ import React from "react";
 
 const Sidebar = () => {
   return (
-    <div className="w-64 px-4">
+    <div className="flex-2 px-4">
       <div className="px-2 pt-4 pb-8 border-r min-h-full border-gray-300">
+        <div className="mb-8 mt-2 -ml-4">
+          <h1 className="font-bold text-4xl text-center md:hidden">
+            D<span className="text-teal-600">.</span>
+          </h1>
+          <h1 className="hidden md:block font-bold text-sm md:text-xl text-center ml-4">
+            D2Y OFFICIAL<span className="text-teal-600">.</span>
+          </h1>
+          <div id="profile" className="space-y-3">
+            <img src="/images/am.jpg" alt="Avatar user" className="w-10 md:w-16 rounded-full mx-auto" />
+            <div>
+              <h2 className="font-medium text-xs md:text-sm text-center text-teal-500">Adi Munawar</h2>
+              <p className="text-xs text-gray-500 text-center">Administrator</p>
+            </div>
+          </div>
+        </div>
+
         <ul className="space-y-2">
           <li>
             <a className="bg-gray-500 bg-opacity-30 text-blue-600 flex items-center justify-between py-1.5 px-4 rounded cursor-pointer">
