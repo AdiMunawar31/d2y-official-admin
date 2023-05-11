@@ -379,11 +379,6 @@ const Navbar = () => {
         </ul>
       </nav>
       {/* section body header */}
-      <header aria-label="page caption" className="flex-none flex h-12 border-y px-4 -ml-4 mb-8 items-center">
-        <h1 id="page-caption" className="font-semibold text-lg">
-          Dashboard
-        </h1>
-      </header>
     </div>
   );
 };
