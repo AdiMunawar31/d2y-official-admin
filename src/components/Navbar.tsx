@@ -156,13 +156,7 @@ const Navbar = () => {
               aria-label="page menu"
               className="h-full w-full rounded-full border focus:outline-none focus:shadow-outline"
             >
-              <Image
-                width={30}
-                height={30}
-                alt="Avatar"
-                className="h-full w-full rounded-full mx-auto"
-                src="https://raw.githubusercontent.com/bluebrown/tailwind-zendesk-clone/master/public/assets/me.jpg"
-              />
+              <Image width={20} height={20} alt="Avatar" className="rounded-full mx-auto" src="/images/am.jpg" />
             </button>
           </li>
         </ul>

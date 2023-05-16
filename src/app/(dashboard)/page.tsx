@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
 import Statistics from "@/components/Statistics";
+import Stats from "@/components/Stats";
 import Image from "next/image";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
     <div>
       <Header title="Dashboard" />
       <div className="flex min-h-screen flex-col mr-4 border-x">
+        <Stats />
         {/* content navigation */}
         <nav className="bg-gray-100 flex p-4">
           {/* open tickets nav */}

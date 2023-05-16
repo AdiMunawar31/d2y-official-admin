@@ -4,6 +4,7 @@ import { AiFillDashboard } from "react-icons/ai";
 import { GoSignOut } from "react-icons/go";
 import { FaBlogger, FaUsers } from "react-icons/fa";
 import { MdForum } from "react-icons/md";
+import Link from "next/link";
 
 const Sidebar = () => {
   return (
@@ -33,19 +34,25 @@ const Sidebar = () => {
 
         <ul className="space-y-2 mr-2">
           <li>
-            <a className="bg-black text-gray-100 flex items-center justify-between py-1.5 px-4 rounded cursor-pointer">
+            <Link
+              href="/"
+              className="bg-black text-gray-100 flex items-center justify-between py-1.5 px-4 rounded cursor-pointer"
+            >
               <span className="flex items-center space-x-2">
                 <AiFillDashboard />
                 <span>Dashboard</span>
               </span>
-              <span className="bg-red-500 text-gray-100 font-bold px-2 py-0.5 text-xs rounded-lg">3</span>
-            </a>
+              {/* <span className="bg-red-500 text-gray-100 font-bold px-2 py-0.5 text-xs rounded-lg">3</span> */}
+            </Link>
           </li>
           <li>
-            <a className="hover:bg-black hover:text-gray-100 flex items-center text-gray-700 py-1.5 px-4 rounded space-x-2 cursor-pointer">
+            <Link
+              href="/about"
+              className="hover:bg-black hover:text-gray-100 flex items-center text-gray-700 py-1.5 px-4 rounded space-x-2 cursor-pointer"
+            >
               <FaUsers />
               <span>Users</span>
-            </a>
+            </Link>
           </li>
           <li>
             <a className="hover:bg-black hover:text-gray-100 flex items-center text-gray-700 py-1.5 px-4 rounded space-x-2 cursor-pointer">
@@ -60,10 +67,13 @@ const Sidebar = () => {
             </a>
           </li>
           <li>
-            <a className="hover:bg-black hover:text-gray-100 flex items-center text-gray-700 py-1.5 px-4 rounded space-x-2 cursor-pointer">
+            <Link
+              href="/login"
+              className="hover:bg-black hover:text-gray-100 flex items-center text-gray-700 py-1.5 px-4 rounded space-x-2 cursor-pointer"
+            >
               <GoSignOut />
               <span>Logout</span>
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
