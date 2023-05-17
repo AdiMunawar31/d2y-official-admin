@@ -32,3 +32,21 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+```Current Task:
+- Belajar Java OOP
+- Belajar Relasi Pada OOP
+
+Completed Task:
+- Belajar Exception (20 menit) (08:00 - 08:20)
+- Belajar Runtime Exception (20 menit) (08:20 - 08:40)
+- Belajar Error Exception (20) (08:40 - 09:00)
+- Belajar StackTraceElement Class (20 menit) (09:00 - 09:20)
+- Belajar Annotation (20 menit) (09:20 - 09:40)
+- Belajar Reflection (20 menit) (09:40 - 10:00)
+
+- Belajar Association, Aggregation, dan Composition (1 Jam) (10:00 - 11:00)
+- Belajar Dependency (30 menit) (11:00 - 11:30)
+
+Issue:
+-```
