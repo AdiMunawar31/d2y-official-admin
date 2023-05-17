@@ -33,14 +33,13 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-```Current Task:
-- Belajar Java OOP
+````Current Task:
 - Belajar Relasi Pada OOP
 
 Completed Task:
 - Belajar Exception (20 menit) (08:00 - 08:20)
 - Belajar Runtime Exception (20 menit) (08:20 - 08:40)
-- Belajar Error Exception (20) (08:40 - 09:00)
+- Belajar Error Exception (20 menit) (08:40 - 09:00)
 - Belajar StackTraceElement Class (20 menit) (09:00 - 09:20)
 - Belajar Annotation (20 menit) (09:20 - 09:40)
 - Belajar Reflection (20 menit) (09:40 - 10:00)
@@ -48,5 +47,9 @@ Completed Task:
 - Belajar Association, Aggregation, dan Composition (1 Jam) (10:00 - 11:00)
 - Belajar Dependency (30 menit) (11:00 - 11:30)
 
+- "Sharing and Discussion" Pemantapan materi OOP (2 jam 40 menit) (13:30 - 16:10)
+- Belajar Generalization dan Specialization (30 menit) (16:40 - 17:10)
+
 Issue:
 -```
+````

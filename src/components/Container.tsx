@@ -1,7 +1,13 @@
 import React from "react";
+import Header from "./Header";
 
-const Container = ({ children }: any) => {
-  return <div className="flex min-h-screen flex-col mr-4 border rounded">{children}</div>;
+const Container = ({ children, title }: any) => {
+  return (
+    <div>
+      <Header title={title} />
+      {children}
+    </div>
+  );
 };
 
 export default Container;

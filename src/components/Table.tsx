@@ -2,93 +2,139 @@ import React from "react";
 
 const Table = () => {
   return (
-    <div id="last-users">
-      <h1 className="font-bold py-4 uppercase">Last 24h users</h1>
-      <div className="overflow-x-scroll">
-        <table className="w-full whitespace-nowrap">
-          <thead className="bg-black/60">
-            <tr>
-              <th className="text-left py-3 px-2 rounded-l-lg">Name</th>
-              <th className="text-left py-3 px-2">Email</th>
-              <th className="text-left py-3 px-2">Group</th>
-              <th className="text-left py-3 px-2">Status</th>
-              <th className="text-left py-3 px-2 rounded-r-lg">Actions</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr className="border-b border-gray-700">
-              <td className="py-3 px-2 font-bold">
-                <div className="inline-flex space-x-3 items-center">
-                  <span>
-                    <img
-                      className="rounded-full w-8 h-8"
-                      src="https://images.generated.photos/tGiLEDiAbS6NdHAXAjCfpKoW05x2nq70NGmxjxzT5aU/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/OTM4ODM1LmpwZw.jpg"
-                      alt=""
-                    />
-                  </span>
-                  <span>Thai Mei</span>
-                </div>
-              </td>
-              <td className="py-3 px-2">thai.mei@abc.com</td>
-              <td className="py-3 px-2">User</td>
-              <td className="py-3 px-2">Approved</td>
-              <td className="py-3 px-2">
-                <div className="inline-flex items-center space-x-3">
-                  <a title="Edit" className="hover:text-white">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth="1.5"
-                      stroke="currentColor"
-                      className="w-5 h-5"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10"
-                      />
-                    </svg>
-                  </a>
-                  <a title="Edit password" className="hover:text-white">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth="1.5"
-                      stroke="currentColor"
-                      className="w-5 h-5"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
-                      />
-                    </svg>
-                  </a>
-                  <a title="Suspend user" className="hover:text-white">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth="1.5"
-                      stroke="currentColor"
-                      className="w-5 h-5"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
+    <table
+      aria-describedby="info-popup"
+      aria-label="open tickets"
+      className="border-t w-full min-h-0 h-full flex flex-col"
+    >
+      <thead className="flex w-full flex-col px-4">
+        <tr className="border-b flex">
+          <th className="font-semibold text-left py-3 pl-3 pr-1 w-24">
+            <input type="checkbox" name="test" />
+          </th>
+          <th className="font-semibold text-left py-3 px-1 w-24 truncate">ID</th>
+          <th className="font-semibold text-left py-3 px-1 w-full max-w-xs xl:max-w-lg truncate">Subject</th>
+          <th className="font-semibold text-left py-3 px-1 flex-1 truncate">Requester</th>
+          <th className="font-semibold text-left py-3 px-1 flex-1 truncate">Requester updated</th>
+          <th className="font-semibold text-left py-3 px-1 flex-1 truncate">Group</th>
+          <th className="font-semibold text-left py-3 px-1 flex-1 truncate">Assignee</th>
+        </tr>
+      </thead>
+      <tbody className="flex w-full flex-col flex-1 min-h-0 overflow-hidden px-4">
+        {/* low */}
+        <tr className="border-b flex">
+          <th className="bg-gray-100 text-left px-3 py-2 flex-1" colSpan={7}>
+            <h2 className="text-sm">
+              <span className="font-normal mr-1">Priority</span>
+              <span>Low</span>
+            </h2>
+          </th>
+        </tr>
+        <tr role="row" className="hover:bg-blue-100 border-b flex cursor-pointer">
+          <td role="cell" headers="select" className="py-3 pl-3 pr-1 w-24 flex items-start">
+            <input className="mt-1" type="checkbox" />
+            <div className="ml-auto relative group">
+              <span
+                style={{ padding: "2px 5px", fontSize: "0.7rem", position: "relative", bottom: "2px" }}
+                className="font-mono rounded-sm bg-red-600 text-white leading-none"
+              >
+                O
+              </span>
+              {/* dropdown */}
+              <span className="hidden group-hover:block ml-4 mt-10 w-screen max-w-lg absolute top-0 border shadow-lg p-6 bg-white rounded-md z-50 text-gray-900">
+                <article>
+                  <header>
+                    <div>
+                      <span className="px-3 py-1 uppercase text-xs leading-none rounded-sm bg-red-600 text-white">
+                        Open
+                      </span>
+                      <span className="ml-2 text-gray-700">Incident #12534</span>
+                      <span className="ml-1">(Low)</span>
+                    </div>
+                  </header>
+                  <section className="mt-5">
+                    <h1 className="text-sm font-semibold mt-3">
+                      Quo laudantium error corporis accusamus unde, labore quidem non officiis.
+                    </h1>
+                    <p className="mt-3">
+                      Hi Team,
+                      <br />
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Error accusantium molestias fugit commodi
+                      doloremque. <br />
+                      <br />
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit? ...
+                    </p>
+                  </section>
+                  <footer className="mt-4">
+                    <p className="text-gray-600">Latest Comments</p>
+                    <hr className="mt-1" />
+                    <div className="flex mt-3">
+                      <p className="font-semibold">Nico Braun</p>
+                      <p className="ml-auto text-gray-700 text-sm">Yesterday 10:33</p>
+                    </div>
+                    <p className="mt-2">
+                      Dolore odio error inventore sint et dolorum asperiores exercitationem, quisquam esse.
+                    </p>
+                  </footer>
+                </article>
+              </span>
+              {/* end dropdown */}
+            </div>
+          </td>
+          <td className="py-3 px-1 w-24">#12534</td>
+          <td className="py-3 px-1 w-full max-w-xs xl:max-w-lg">
+            <div className="relative group w-full">
+              <p className="w-full truncate">
+                Quo laudantium error corporis accusamus unde, labore quidem non officiis.
+              </p>
+              {/* dropdown */}
+              <span className="hidden group-hover:block ml-4 mt-10 w-screen max-w-lg absolute top-0 border shadow-lg p-6 bg-white rounded-md z-50 text-gray-900">
+                <article>
+                  <header>
+                    <div>
+                      <span className="px-3 py-1 uppercase text-xs leading-none rounded-sm bg-red-600 text-white">
+                        Open
+                      </span>
+                      <span className="ml-2 text-gray-700">Incident #12534</span>
+                      <span className="ml-1">(Low)</span>
+                    </div>
+                  </header>
+                  <section className="mt-5">
+                    <h1 className="text-sm font-semibold mt-3">
+                      Quo laudantium error corporis accusamus unde, labore quidem non officiis.
+                    </h1>
+                    <p className="mt-3">
+                      Hi Team,
+                      <br />
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Error accusantium molestias fugit commodi
+                      doloremque. <br />
+                      <br />
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit? ...
+                    </p>
+                  </section>
+                  <footer className="mt-4">
+                    <p className="text-gray-600">Latest Comments</p>
+                    <hr className="mt-1" />
+                    <div className="flex mt-3">
+                      <p className="font-semibold">Nico Braun</p>
+                      <p className="ml-auto text-gray-700 text-sm">Yesterday 10:33</p>
+                    </div>
+                    <p className="mt-2">
+                      Dolore odio error inventore sint et dolorum asperiores exercitationem, quisquam esse.
+                    </p>
+                  </footer>
+                </article>
+              </span>
+              {/* end dropdown */}
+            </div>
+          </td>
+          <td className="py-3 px-1 flex-1 truncate">Marla Darsuz</td>
+          <td className="py-3 px-1 flex-1 truncate">Tuesday 09:56</td>
+          <td className="py-3 px-1 flex-1 truncate">UK Support</td>
+          <td className="py-3 px-1 flex-1 truncate">Nico Braun</td>
+        </tr>
+      </tbody>
+    </table>
   );
 };
 

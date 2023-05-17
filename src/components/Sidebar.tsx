@@ -47,7 +47,7 @@ const Sidebar = () => {
           </li>
           <li>
             <Link
-              href="/about"
+              href="/users"
               className="hover:bg-black hover:text-gray-100 flex items-center text-gray-700 py-1.5 px-4 rounded space-x-2 cursor-pointer"
             >
               <FaUsers />
